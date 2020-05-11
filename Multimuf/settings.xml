@@ -1,0 +1,31 @@
+<settings>
+  <pluginGroups>
+      <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+  </pluginGroups>
+  <proxies>
+     <proxy>
+        <id>lyon1</id>
+        <active>true</active>
+        <protocol>http</protocol>
+        <host>proxy.univ-paris.fr</host>
+        <port>3128</port>
+        <nonProxyHosts>*localhost*|192.168.74.36</nonProxyHosts>
+      </proxy>
+
+     <proxy>
+        <id>lyon1-https</id>
+        <active>true</active>
+        <protocol>https</protocol>
+        <host>proxy.univ-paris.fr</host>
+        <port>3128</port>
+        <nonProxyHosts>*localhost*|192.168.74.36</nonProxyHosts>
+      </proxy>
+  </proxies>
+  <servers>
+    <server>
+      <id>tomcat-local</id>
+      <username>etudiant</username>
+      <password>etudiant</password>
+    </server>
+  </servers>
+</settings>
